@@ -1,0 +1,77 @@
+footer {
+  background: #12263F;              /* fond bleu nuit */
+  color: #C9D5E2;
+  font-family: 'Lato', sans-serif;
+}
+
+.footer-contenu {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 48px 24px 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.footer-colonne {
+  flex: 1 1 180px;                  /* les colonnes ont la même largeur */
+}
+
+.footer-colonne h3 {
+  margin: 0 0 14px;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.footer-colonne a,
+.footer-colonne p {
+  display: block;                   /* un élément par ligne */
+  margin: 0 0 10px;
+  font-size: 15px;
+  color: #C9D5E2;
+}
+
+.footer-colonne a:hover {
+  color: #FFFFFF;
+}
+
+.footer-logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  color: #FFFFFF;
+}
+
+/* Newsletter */
+.footer-colonne input {
+  width: 100%;
+  height: 44px;
+  padding: 0 12px;
+  margin-bottom: 10px;
+  border: 1px solid #5A6F86;
+  background: transparent;
+  color: #FFFFFF;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.footer-colonne button {
+  width: 100%;
+  height: 44px;
+  border: 0;
+  background: #FAF8F3;
+  color: #12263F;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.copyright {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 24px;
+  border-top: 1px solid #2E4560;
+  font-size: 14px;
+  box-sizing: border-box;
+}

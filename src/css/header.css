@@ -1,0 +1,38 @@
+
+header {
+  background: #FFFFFF;
+  border-bottom: 1px solid #D9D3C5;
+}
+
+.header-contenu {
+  max-width: 1200px;
+  margin: 0 auto;                   /* centre le contenu */
+  padding: 16px 24px;
+  display: flex;                    /* logo et menu sur la même ligne */
+  justify-content: space-between;   /* logo à gauche, menu à droite */
+  align-items: center;
+  flex-wrap: wrap;                  /* passe à la ligne sur petit écran */
+  gap: 12px;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  font-weight: 600;
+  color: #12263F;
+}
+
+nav a {
+  margin-left: 8px;
+  padding: 10px 14px;
+  font-family: 'Lato', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #12263F;
+}
+
+nav a:hover {
+  color: #3E7A63;                   /* vert au survol */
+}
