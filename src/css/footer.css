@@ -1,5 +1,5 @@
 footer {
-  background: #12263F;              /* fond bleu nuit */
+  background: #12263F;
   color: #C9D5E2;
   font-family: 'Lato', sans-serif;
 }
@@ -7,71 +7,114 @@ footer {
 .footer-contenu {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 48px 24px 24px;
+  padding: 72px 24px 40px;
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 48px 40px;
   justify-content: space-between;
 }
 
 .footer-colonne {
-  flex: 1 1 180px;                  /* les colonnes ont la même largeur */
+  flex: 1 1 160px;
+}
+
+.footer-marque {
+  flex: 1 1 240px;
+  max-width: 320px;
+}
+
+.footer-rond {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid #B8C9A8;      /* le logo rond */
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 12px;
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #FFFFFF;
 }
 
 .footer-colonne h3 {
-  margin: 0 0 14px;
-  font-size: 13px;
-  letter-spacing: 2px;
+  margin: 0 0 16px;
+  font-size: 12px;
+  letter-spacing: 3px;
   text-transform: uppercase;
   color: #FFFFFF;
 }
 
 .footer-colonne a,
 .footer-colonne p {
-  display: block;                   /* un élément par ligne */
-  margin: 0 0 10px;
+  display: block;
+  margin: 0 0 12px;
   font-size: 15px;
+  line-height: 1.7;
   color: #C9D5E2;
+  text-decoration: none;
 }
 
 .footer-colonne a:hover {
   color: #FFFFFF;
 }
 
-.footer-logo {
+/* Newsletter dans une boîte */
+.newsletter {
+  flex: 1 1 300px;
+  max-width: 380px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+}
+
+.newsletter-titre {
   font-family: 'Playfair Display', serif;
-  font-size: 30px;
+  font-size: 20px;
+  font-weight: 500;
   color: #FFFFFF;
 }
 
-/* Newsletter */
-.footer-colonne input {
-  width: 100%;
-  height: 44px;
-  padding: 0 12px;
-  margin-bottom: 10px;
-  border: 1px solid #5A6F86;
-  background: transparent;
+.newsletter input {
+  height: 48px;
+  padding: 0 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.06);
   color: #FFFFFF;
   font-size: 15px;
   box-sizing: border-box;
 }
 
-.footer-colonne button {
-  width: 100%;
-  height: 44px;
+.newsletter button {
+  height: 48px;
   border: 0;
   background: #FAF8F3;
   color: #12263F;
+  font-size: 13px;
   font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
   cursor: pointer;
+}
+
+.newsletter button:hover {
+  background: #B8C9A8;
 }
 
 .copyright {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px 24px;
-  border-top: 1px solid #2E4560;
+  padding: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
   font-size: 14px;
   box-sizing: border-box;
 }
