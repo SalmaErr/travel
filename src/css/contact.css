@@ -1,0 +1,220 @@
+/* ===== En-tête ===== */
+.ct-entete {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 88px 24px 56px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 18px;
+}
+
+.ct-entete h1 {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  font-size: 52px;
+  line-height: 1.12;
+  font-weight: 500;
+}
+
+.ct-entete p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.75;
+  color: #3A4E66;
+}
+
+.petit-titre {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #3E7A63;
+}
+
+.trait-or {
+  display: block;
+  width: 56px;
+  height: 1px;
+  background: #8A6A35;
+}
+
+/* ===== Contenu : infos + formulaire ===== */
+.ct-contenu {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 24px 96px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+/* Coordonnées */
+.ct-infos {
+  flex: 1 1 340px;
+  background: #FFFFFF;
+  border: 1px solid #D9D3C5;
+}
+
+.ct-infos > div {
+  padding: 28px 32px;
+  border-bottom: 1px solid #D9D3C5;
+}
+
+.ct-infos > div:last-child {
+  border-bottom: 0;
+}
+
+.ct-label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #3E7A63;
+}
+
+.ct-infos p,
+.ct-infos a {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #12263F;
+  text-decoration: none;
+}
+
+.ct-infos a:hover {
+  color: #3E7A63;
+}
+
+/* Formulaire */
+.ct-formulaire {
+  flex: 2 1 460px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  background: #FFFFFF;
+  border: 1px solid #D9D3C5;
+  box-sizing: border-box;
+}
+
+.ct-formulaire h2 {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.ct-champ {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ct-champ label {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.ct-champ input,
+.ct-champ textarea {
+  padding: 14px 16px;
+  border: 1px solid #B9B2A2;
+  background: #FFFFFF;
+  font-size: 16px;
+  font-family: inherit;
+  color: #12263F;
+  box-sizing: border-box;
+}
+
+.ct-champ input {
+  height: 52px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.ct-champ input:focus,
+.ct-champ textarea:focus {
+  outline: 2px solid #3E7A63;
+  outline-offset: 1px;
+}
+
+.ct-erreur {
+  font-size: 14px;
+  color: #B3261E;
+}
+
+.ct-succes {
+  margin: 0;
+  padding: 14px 18px;
+  background: #E8F1EC;
+  border: 1px solid #3E7A63;
+  color: #1D4F3A;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.ct-formulaire button {
+  align-self: flex-start;
+  height: 52px;
+  padding: 0 36px;
+  border: 0;
+  background: #12263F;
+  color: #FAF8F3;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.ct-formulaire button:hover {
+  background: #3E7A63;
+}
+
+.ct-formulaire small {
+  font-size: 14px;
+  color: #3A4E66;
+}
+
+/* ===== Carte ===== */
+.ct-carte {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px 96px;
+}
+
+.ct-carte iframe {
+  width: 100%;
+  height: 380px;
+  border: 0;
+  display: block;
+}
+
+.ct-carte-vide {
+  height: 380px;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px dashed #B9B2A2;
+  background: #FFFFFF;
+  color: #3A4E66;
+  font-size: 15px;
+  line-height: 1.6;
+  box-sizing: border-box;
+}
+
+/* ===== Téléphone ===== */
+@media (max-width: 600px) {
+  .ct-entete h1 { font-size: 36px; }
+  .ct-formulaire { padding: 24px; }
+}

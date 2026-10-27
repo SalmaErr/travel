@@ -23,7 +23,7 @@ function Footer() {
           <a href="/">Accueil</a>
           <a href="/a-propos">À propos</a>
           <a href="/#destinations">Voyages</a>
-          <a href="#contact">Contact</a>
+          <a href="/contact">Contact</a>
         </div>
 
         <div className="footer-colonne">
